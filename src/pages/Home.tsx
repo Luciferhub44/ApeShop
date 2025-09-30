@@ -7,27 +7,27 @@ export default function Home() {
         slides={[
           {
             id: "s1",
-            imageUrl: "/Oak1.png",
+            imageUrl: "public/Oak1.png",
             title: "Own iconic digital collectibles",
             subtitle: "Discover rare Stories from top legends and emerging artists.",
             ctaText: "Explore",
-            ctaHref: "/#",
+            ctaHref: "/home",
           },
           {
             id: "s2",
-            imageUrl: "/Oak2.png",
+            imageUrl: "public/Oak2.png",
             title: "The Other Side of the Flame",
             subtitle: "Explore the hidden truths of the Tribe Odyssey.",
             ctaText: "Create Your Story",
-            ctaHref: "/#",
+            ctaHref: "/home",
           },
           {
             id: "s3",
-            imageUrl: "/sailor_ape.png",
+            imageUrl: "public/sailor_ape.png",
             title: "Across the Chrimsons Tide",
             subtitle: "Follow the journey of the Ape as he navigates the Chrimsons Tide.",
             ctaText: "View Journey",
-            ctaHref: "/#",
+            ctaHref: "/home",
           },
         ]}
         className="w-full"
