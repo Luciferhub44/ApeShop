@@ -1,5 +1,5 @@
-import { createThirdwebClient, type Wallet } from "thirdweb"
-import { walletConnect, metamaskWallet, coinbaseWallet, embeddedWallet } from "thirdweb/wallets"
+import { createThirdwebClient } from "thirdweb"
+import { walletConnect, embeddedWallet } from "thirdweb/wallets"
 
 const clientId = import.meta.env.VITE_THIRDWEB_CLIENT_ID as string | undefined
 
@@ -14,10 +14,8 @@ export const client = createThirdwebClient({
   clientId: clientId ?? "",
 })
 
-export const supportedWallets: Wallet[] = [
-  metamaskWallet(),
+export const supportedWallets = [
   walletConnect(),
-  coinbaseWallet(),
   embeddedWallet(),
 ]
 
