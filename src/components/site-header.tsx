@@ -30,7 +30,7 @@ function SiteHeader() {
                 <NavigationMenuTrigger>Stats</NavigationMenuTrigger>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="hidden md:inline-flex">Pricing</NavigationMenuLink>
+                <NavigationMenuLink className="hidden md:inline-flex">NANA Points</NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
