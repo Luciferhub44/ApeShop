@@ -1,6 +1,7 @@
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/navigation-menu"
-import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
+import { ConnectButton } from "thirdweb/react"
+import { client, supportedWallets } from "@/lib/thirdweb"
 
 function SiteHeader() {
   return (
@@ -38,7 +39,7 @@ function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <ModeToggle />
-          <Button variant="secondary">Connect Wallet</Button>
+          <ConnectButton client={client} wallets={supportedWallets} />
         </div>
       </div>
     </header>
