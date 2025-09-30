@@ -1,4 +1,4 @@
-import { Outlet, RouterProvider, createRootRoute, createRoute, createRouter } from "@tanstack/react-router"
+import { Outlet, RouterProvider, createRootRoute, createRoute } from "@tanstack/react-router"
 import Home from "@/pages/Home"
 import Explore from "@/pages/Explore"
 import Collections from "@/pages/Collections"
@@ -8,6 +8,7 @@ import Stats from "@/pages/Stats"
 import Points from "@/pages/Points"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { createAppRouter } from "@/router.config"
 
 function RootLayout() {
   return (
@@ -77,15 +78,7 @@ const routeTree = rootRoute.addChildren([
   pointsRoute,
 ])
 
-export const router = createRouter({
-  routeTree,
-})
-
-declare module "@tanstack/react-router" {
-  interface Register {
-    router: typeof router
-  }
-}
+export const router = createAppRouter(routeTree)
 
 export function AppRouter() {
   return <RouterProvider router={router} />
