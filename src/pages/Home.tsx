@@ -11,7 +11,7 @@ export default function Home() {
             title: "Own iconic digital collectibles",
             subtitle: "Discover rare Stories from top legends and emerging artists.",
             ctaText: "Explore",
-            ctaHref: "/Home",
+            ctaHref: "/explore",
           },
           {
             id: "s2",
@@ -19,7 +19,7 @@ export default function Home() {
             title: "The Other Side of the Flame",
             subtitle: "Explore the hidden truths of the Tribe Odyssey.",
             ctaText: "Create Your Story",
-            ctaHref: "/Home",
+            ctaHref: "/create",
           },
           {
             id: "s3",
@@ -27,7 +27,7 @@ export default function Home() {
             title: "Across the Chrimsons Tide",
             subtitle: "Follow the journey of the Ape as he navigates the Chrimsons Tide.",
             ctaText: "View Journey",
-            ctaHref: "/Home",
+            ctaHref: "/stats",
           },
         ]}
         className="w-full"
