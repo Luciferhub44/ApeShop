@@ -6,9 +6,19 @@ import Create from "@/pages/Create"
 import Sell from "@/pages/Sell"
 import Stats from "@/pages/Stats"
 import Points from "@/pages/Points"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
 function RootLayout() {
-  return <Outlet />
+  return (
+    <div className="flex min-h-svh flex-col">
+      <SiteHeader />
+      <main className="container mx-auto flex-1 px-4 py-8 sm:px-6 lg:px-8">
+        <Outlet />
+      </main>
+      <SiteFooter />
+    </div>
+  )
 }
 
 const rootRoute = createRootRoute({
